@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.pizzaMain {
+  background: rgb(238, 231, 220);
+}
+.pizzaArea {
+  min-height: 100vh;
+}
+.pizzaSidebar {
+  background: rgb(224, 215, 199);
+  min-height: 100vh;
+}
