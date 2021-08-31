@@ -1,9 +1,13 @@
 import { Button } from "@material-ui/core"
+import { motion } from 'framer-motion'
 
 const PizzaToppings = ({ setTopping, handleToppings }) => {
 
     return (
-        <>
+        <motion.div layout 
+        initial={{ x: -100 }}
+        animate={{ x: 0 }}
+        >
             <h5>Choose Toppings (search)</h5>
             <Button size='small' color='primary' onClick={(e) => handleToppings('Anchovies')} className='btncolors m-2'>Anchovies</Button>
             <Button size='small' color='primary' onClick={(e) => handleToppings('Bacon Rashers')} className='btncolors m-2'>Bacon Rashers</Button>
@@ -37,7 +41,7 @@ const PizzaToppings = ({ setTopping, handleToppings }) => {
 
             <Button size='small' color='primary' variant="contained" onClick={() => setTopping(true)} className='btncolors m-2'>Done</Button>
      
-        </>
+        </motion.div>
     )
 }
 
