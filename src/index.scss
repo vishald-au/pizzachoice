@@ -37,3 +37,21 @@ code {
     color: white;
   }
 }
+
+.stages {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listpizza {
+  font-size: 22px;
+  small {
+    font-size: 12px !important;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  ul {
+    list-style: none;
+  }
+}

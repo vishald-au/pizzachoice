@@ -55,15 +55,24 @@ function App() {
         </div>
         <div className="col-6 col-md-4 p-4 pizzaSidebar">
           <h5 className='p-3'>My Pizza <Button size='small' variant='outlined' onClick={() => handleReset()} className='btntex m-2'>reset</Button></h5>
-          <div className='p-3'>
-            {size && size + ' Size'} <br />
-            {base && base + ' Base'} <br />
-            {sauce && sauce} <br />
-            {toppings.length > 0 && 'Topping(s) - '} <br />
+          <div className='listpizza p-3'>
+            {size && <>
+              {size} <small>Size</small>
+            </>} <br />
+            {base && <>
+              {base} <small>Base</small>
+            </>} <br />
+            {sauce && <>
+              {sauce} <small>Sauce</small>
+            </>} <br />
+            {toppings.length > 0 && <small>Topping(s)</small>} <br />
+            <ul>
             {toppings.map((top, index) => (
-              <li key={index}>{top}</li>
-            ))} <br />
-            {order && order + ' my order'} <br />
+              <li key={index}><small>+</small> {top}</li>
+            ))}</ul> <br />
+            {order && <>
+              <small>Would like to</small> {order} <small>my order</small>
+              </>} <br />
             {order && <Button size='small' variant="contained" color='secondary' onClick={() => handleReset()} className='btncolors mt-3'>Pay $19.95</Button>}
       
           </div>
