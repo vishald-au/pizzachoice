@@ -43,7 +43,21 @@ function App() {
       <div className="row">
         <div className="col-6 col-md-8 p-4 pizzaArea">
           <h1>PizzaChoice</h1>
+          {start && <div className='progressStages'>
+            <ul>
+              <li className={start && 'active'}>Size</li>
+              <li className={start ? 'active linesep' : 'linesep'}></li>
+              <li className={size && 'active'}>Base</li>
+              <li className={size ? 'active linesep' : 'linesep'}></li>
+              <li className={base && 'active'}>Sauce</li>
+              <li className={base ? 'active linesep' : 'linesep'}></li>
+              <li className={sauce && 'active'}>Toppings</li>
+              <li className={sauce ? 'active linesep' : 'linesep'}></li>
+              <li className={topping && 'active'}>Order</li>
+            </ul>
+          </div>}
           <div className='stages p-4'>
+
             {!start && <div><Button variant="contained" color='secondary' onClick={() => setStart(true)}>Start</Button></div>}
             {start && !size && <PizzaSize setSize={setSize} />}
             {size && !base && <PizzaBase setBase={setBase} />}
