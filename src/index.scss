@@ -13,12 +13,27 @@ code {
 }
 
 .pizzaMain {
-  background: rgb(238, 231, 220);
+  background: #eee7dc;
+  background: rgb(76, 0, 242);
+  background: linear-gradient(
+    0deg,
+    rgba(76, 0, 242, 1) 0%,
+    rgba(104, 45, 253, 1) 50%,
+    rgba(76, 0, 242, 1) 100%
+  );
+  color: white;
 }
 .pizzaArea {
   min-height: 100vh;
 }
 .pizzaSidebar {
-  background: rgb(224, 215, 199);
+  background: rgba(0, 0, 0, 0.15);
   min-height: 100vh;
+}
+
+.btntex {
+  border-color: white !important;
+  span {
+    color: white;
+  }
 }

@@ -54,7 +54,7 @@ function App() {
           </div>
         </div>
         <div className="col-6 col-md-4 p-4 pizzaSidebar">
-          <h5 className='p-3'>My Pizza <Button size='small' onClick={() => handleReset()} className='btncolors m-2'>reset</Button></h5>
+          <h5 className='p-3'>My Pizza <Button size='small' variant='outlined' onClick={() => handleReset()} className='btntex m-2'>reset</Button></h5>
           <div className='p-3'>
             {size && size + ' Size'} <br />
             {base && base + ' Base'} <br />
@@ -64,7 +64,7 @@ function App() {
               <li key={index}>{top}</li>
             ))} <br />
             {order && order + ' my order'} <br />
-            {order && <Button size='small' variant="contained" color='secondary' onClick={() => handleReset()} className='btncolors mt-3'>Pay $14.95</Button>}
+            {order && <Button size='small' variant="contained" color='secondary' onClick={() => handleReset()} className='btncolors mt-3'>Pay $19.95</Button>}
       
           </div>
         </div>

@@ -8,9 +8,9 @@ const PizzaSize = ({setSize}) => {
             animate={{ x: 0 }}
             >
             <h5>Choose Size</h5>
-            <Button size='small' color='primary' onClick={() => setSize('Medium')} variant="contained" className='btncolors m-2'>Medium</Button>
-            <Button size='small' color='primary' onClick={() => setSize('Large')} variant="contained" className='btncolors m-2'>Large</Button>
-            <Button size='small' color='primary' onClick={() => setSize('Family')} variant="contained" className='btncolors m-2'>Family</Button>
+            <Button size='small' onClick={() => setSize('Medium')} variant="contained" className='btncolors m-2'>Medium</Button>
+            <Button size='small' onClick={() => setSize('Large')} variant="contained" className='btncolors m-2'>Large</Button>
+            <Button size='small' onClick={() => setSize('Family')} variant="contained" className='btncolors m-2'>Family</Button>
         </motion.div>
     )
 }
