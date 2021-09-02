@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 import Button from '@material-ui/core/Button'
 import PizzaSize from './Components/PizzaSize'
 import PizzaBase from './Components/PizzaBase'
