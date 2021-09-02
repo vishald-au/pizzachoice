@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const PizzaOrder = ({ setOrder }) => {
     return (
         <motion.div layout 
-            initial={{ x: -100 }}
+            initial={{ x: '-100vw' }}
             animate={{ x: 0 }}
             >
             <h5>Select order type?</h5>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import { motion } from 'framer-motion'
 import Button from '@material-ui/core/Button'
 import PizzaSize from './Components/PizzaSize'
 import PizzaBase from './Components/PizzaBase'
@@ -42,8 +42,8 @@ function App() {
     <div className="container-fluid pizzaMain">
       <div className="row">
         <div className="col-6 col-md-8 p-4 pizzaArea">
-          <h1>PizzaChoice</h1>
-          {start && <div className='progressStages'>
+          <h1 >PizzaChoice</h1>
+          {/* {start && <div className='progressStages'>
             <ul>
               <li className={start && 'active'}>Size</li>
               <li className={start ? 'active linesep' : 'linesep'}></li>
@@ -55,7 +55,7 @@ function App() {
               <li className={sauce ? 'active linesep' : 'linesep'}></li>
               <li className={topping && 'active'}>Order</li>
             </ul>
-          </div>}
+          </div>} */}
           <div className='stages p-4'>
 
             {!start && <div><Button variant="contained" color='secondary' onClick={() => setStart(true)}>Start</Button></div>}

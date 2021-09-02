@@ -5,7 +5,7 @@ const PizzaToppings = ({ setTopping, handleToppings }) => {
 
     return (
         <motion.div layout
-        initial={{ x: -100 }}
+        initial={{ x: '-100vw' }}
         animate={{ x: 0 }}
         >
             <h5>Choose Toppings (search)</h5>

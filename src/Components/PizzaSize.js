@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const PizzaSize = ({setSize}) => {
     return (
         <motion.div layout 
-            initial={{ x: -100 }}
+            initial={{ x: '-100vw' }}
             animate={{ x: 0 }}
             >
             <h5>Choose Size</h5>
